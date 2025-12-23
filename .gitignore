@@ -1,0 +1,20 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+*.swp
+
+# PDFs (optional — remove if you want to include them)
+*.pdf
+
+# Images (optional — keep if you want to exclude drafts)
+*.psd
+*.xcf
