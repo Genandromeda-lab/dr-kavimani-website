@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Events, festivals, and cultural outreach of Dr. K. Kavimani." />
+  <title>Events | Dr. K. Kavimani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo">
+        <span>Dr. K. Kavimani</span>
+        <small class="nav__tagline">Art is the heart of transformation</small>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html" class="is-active">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Event Timeline -->
+    <section class="section section--light">
+      <div class="main-container">
+        <div class="timeline-container">
+          <h2 class="timeline-title">Event Timeline</h2>
+          <div class="timeline-entry">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-desc">Coordinated Chennai Sangamam festival, bringing art into public spaces.</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-desc">Organized Art Market initiative, showcasing local artists and craftspeople.</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-desc">Curated cultural exhibitions highlighting Tamil identity and social justice themes.</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-desc">Presented at international art conferences, connecting Tamil traditions to global audiences.</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-desc">Led community art outreach programmes, blending pedagogy with cultural activism.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Highlights -->
+    <section class="section section--light">
+  <div class="main-container">
+    <div class="card event-highlights-hybrid">
+      <h2>Event Highlights & Impact</h2>
+      <div class="highlights-grid">
+        <div class="highlight-item dark-accent">
+          <h3>🎭 Community Engagement</h3>
+          <p>Festivals and markets transformed public spaces into vibrant cultural platforms.</p>
+        </div>
+        <div class="highlight-item">
+          <h3>🌍 Global Recognition</h3>
+          <p>Conferences and exhibitions positioned Tamil art within international dialogues.</p>
+        </div>
+        <div class="highlight-item dark-accent">
+          <h3>📺 Media Presence</h3>
+          <p>Coverage in cultural programmes amplified visibility of Dalit and Tamil voices.</p>
+        </div>
+        <div class="highlight-item">
+          <h3>👩‍🎓 Student Involvement</h3>
+          <p>Events doubled as live learning experiences, mentoring young artists in practice.</p>
+        </div>
+        <div class="highlight-item dark-accent">
+          <h3>✨ Cultural Legacy</h3>
+          <p>Each event reinforced the bridge between tradition and modernity in Tamil art.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Next button -->
+  <div class="next-button-wrapper">
+    <a href="outreach.html" class="btn btn--next">Next →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html" class="is-active">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-credit">
+        <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav script -->
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav__links--open');
+    });
+  </script>
+</body>
+</html>

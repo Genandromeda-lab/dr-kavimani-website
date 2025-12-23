@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Dr. K. Kavimani, Professor of Printmaking, researcher, author, and cultural ambassador.">
+  <title>About | Dr. K. Kavimani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo">
+        <span>Dr. K. Kavimani</span>
+        <small class="nav__tagline">Art is the heart of transformation</small>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Card 1 -->
+    <section class="section section--light">
+      <div class="main-container">
+        <div class="card">
+          <h2>Academic Journey</h2>
+          <p>Dr. K. Kavimani has dedicated his career to Printmaking and Fine Arts, serving as a professor at the Government College of Fine Arts, Chennai. With over 15 years of teaching experience, he has nurtured countless artists, encouraging them to explore creativity as a transformative force.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 2 -->
+    <section class="section section--peach">
+      <div class="main-container">
+        <div class="card">
+          <h2>Research & Publications</h2>
+          <p>His works such as <strong>Memory Power Art Practices</strong> (2025) and <strong>Tamilians Drawing Traditions</strong> (2020) are widely cited in academic circles. His scholarship highlights the intersections of art, identity, and social justice.</p>
+          <a href="publications.html" class="btn btn--primary">Explore Publications</a>
+        </div>
+      </div>
+    </section>
+
+   <section class="section section--peach">
+  <div class="main-container">
+    <div class="card">
+      <h2>Gallery Highlights</h2>
+      <div class="carousel">
+        <button class="carousel-btn prev">‹</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide"><img src="images/KM speech 3.jpeg" alt="Workshop moment"></li>
+            <li class="carousel-slide"><img src="images/KM sangamam.jpeg" alt="Conference presentation"></li>
+            <li class="carousel-slide"><img src="images/KM with students archi.jpeg" alt="Student mentoring"></li>
+            <li class="carousel-slide"><img src="images/KM kilambakkam.jpeg" alt="Festival coordination"></li>
+            <li class="carousel-slide"><img src="images/KM fort.jpeg" alt="Art tour site"></li>
+            <li class="carousel-slide"><img src="images/KM stu drawing college.jpeg" alt="Printmaking demo"></li>
+            <li class="carousel-slide"><img src="images/KM foreigners.jpeg" alt="Cultural outreach"></li>
+            <li class="carousel-slide"><img src="images/KM manadu 2.jpeg" alt="Panel discussion"></li>
+            <li class="carousel-slide"><img src="images/KM archi.jpeg" alt="Exhibition setup"></li>
+          </ul>
+        </div>
+        <button class="carousel-btn next">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Card 3 -->
+    <section class="section section--light">
+      <div class="main-container">
+        <div class="card">
+          <h2>Outreach & Legacy</h2>
+          <p>Beyond academia, Dr. Kavimani has coordinated cultural festivals such as Chennai Sangamam and Art Market, bringing art into public spaces and communities. His legacy lies in bridging tradition and modernity, ensuring Tamil art and Dalit voices are celebrated globally.</p>
+          <a href="outreach.html" class="btn btn--secondary">Discover Outreach</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="next-button-wrapper">
+  <a href="publications.html" class="btn btn--next">Next →</a>
+</div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-credit">
+        <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav__links--open');
+    });
+  </script>
+
+  <script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector('.next');
+  const prevButton = document.querySelector('.prev');
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const slideWidth = slides[0].getBoundingClientRect().width + 16;
+    track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+  }
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  });
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  }, 5000);
+</script>
+</body>
+</html>

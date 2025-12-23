@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website of Dr. K. Kavimani, Professor of Printmaking, researcher, and artist.">
+
+  <!-- Title -->
+  <title>Dr. K. Kavimani | Official Website</title>
+
+  <!-- Fonts (example: Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <header class="nav">
+  <div class="container nav__inner">
+    <!-- Logo / Name -->
+    <a class="nav__logo">
+  <span>Dr. K. Kavimani</span>
+  <small class="nav__tagline">Art is the heart of transformation</small>
+</a>
+    <!-- Navigation Links -->
+    <nav class="nav__links">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="about.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="projects.html">Projects</a>
+      <a href="events.html">Events</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="art.html">Artworks</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <button class="nav__toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+  </div>
+</header>
+<main>
+  <!-- Welcome Card -->
+<section class="section section--intro">
+  <div class="main-container">
+    <div class="card card--intro">
+      <!-- Profile Image -->
+      <img src="images/kavimani photo.jpeg" alt="Dr. K. Kavimani" class="intro-img">
+
+      <!-- Quote -->
+      <blockquote class="intro-quote">
+        “Art is the heart of transformation, and through it we discover our shared humanity.”
+      </blockquote>
+    </div>
+  </div>
+</section>
+  <!-- About Card -->
+  <section class="section section--light">
+    <div class="main-container">
+      <div class="card">
+        <h2>About</h2>
+        <p>Professor of Printmaking, researcher, and award-winning author. Passionate about Dalit art, Tamil heritage, and contemporary pedagogy.</p>
+        <a href="about.html" class="btn btn--secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Card -->
+<section class="section section--peach">
+  <div class="main-container">
+    <div class="card">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>Memory Power Art Practices</strong> (2025)</li>
+        <li><strong>Tamilians Drawing Traditions</strong> (2020)</li>
+      </ul>
+      <p>Dr. Kavimani’s writings explore the intersections of art, identity, and pedagogy. His publications are widely cited in academic circles and have influenced contemporary printmaking practices across India.</p>
+      <p>Through his books and articles, he highlights the importance of Dalit art traditions, Tamil heritage, and the role of visual culture in social transformation.</p>
+      <a href="publications.html" class="btn btn--primary">View All</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Teaching Card -->
+  <section class="section section--light">
+    <div class="main-container">
+      <div class="card">
+        <h2>Teaching</h2>
+        <p>Over 15 years of experience nurturing artists at Govt. College of Fine Arts, Chennai.</p>
+        <a href="teaching.html" class="btn btn--secondary">Explore Teaching</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Card -->
+  <section class="section section--peach">
+    <div class="main-container">
+      <div class="card">
+        <h2>Projects & Research</h2>
+        <p>Recent studies on Gangifa paintings, women artists in India, and Tamil rock art.</p>
+        <a href="projects.html" class="btn btn--primary">See All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Card -->
+  <section class="section section--light">
+    <div class="main-container">
+      <div class="card">
+        <h2>Events & Outreach</h2>
+        <p>Coordinator of Chennai Sangamam and Art Market festivals. Active in national workshops.</p>
+        <a href="events.html" class="btn btn--secondary">View Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Card -->
+<section class="section section--peach">
+  <div class="main-container">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kavimaniku@gmail.com">kavimaniku@gmail.com</a></p>
+      <p>Dr. Kavimani welcomes collaborations, academic inquiries, and invitations to workshops or conferences. Whether you are a student, researcher, or fellow artist, feel free to reach out.</p>
+      <p>He is also available for guest lectures, panel discussions, and mentoring sessions in the fields of printmaking, art history, and cultural studies.</p>
+      <a href="contact.html" class="btn btn--primary">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<script>
+  const toggle = document.querySelector('.nav__toggle');
+  const links = document.querySelector('.nav__links');
+
+  toggle.addEventListener('click', () => {
+    // Toggle a CSS class instead of inline styles
+    links.classList.toggle('nav__links--open');
+  });
+</script>
+
+<div class="next-button-wrapper">
+  <a href="about.html" class="btn btn--next">Next →</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="projects.html">Projects</a>
+      <a href="events.html">Events</a>
+      <a href="outreach.html">Outreach</a>
+      <a href="art.html">Artworks</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-credit">
+      <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

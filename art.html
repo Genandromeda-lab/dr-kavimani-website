@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery of artworks by Dr. K. Kavimani." />
+  <title>Artworks | Dr. K. Kavimani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo">
+        <span>Dr. K. Kavimani</span>
+        <small class="nav__tagline">Art is the heart of transformation</small>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html" class="is-active">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Artworks Header -->
+    <section class="section section--light">
+      <div class="main-container">
+        <div class="gallery-header-container">
+          <h2 class="gallery-title">Artworks Gallery</h2>
+          <p class="gallery-intro">
+            Explore a curated selection of Dr. Kavimani’s paintings, sketches, and cultural art projects — each piece tells a story of heritage, identity, and transformation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artworks Grid -->
+    <section class="section section--light">
+      <div class="main-container">
+        <div class="artworks-grid">
+          <div class="artwork-card"><img src="assets/art1.jpg" alt="Kalamkari Revival"><h3>Kalamkari Revival</h3><p>Traditional motifs reimagined in contemporary style.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art2.jpg" alt="Tanjore Heritage"><h3>Tanjore Heritage</h3><p>Gold-leaf inspired painting celebrating Tamil culture.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art3.jpg" alt="Dalit Voices"><h3>Dalit Voices</h3><p>Expressive canvas highlighting marginalized identities.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art4.jpg" alt="Rock Art Echoes"><h3>Rock Art Echoes</h3><p>Inspired by prehistoric Tamil Nadu cave paintings.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art5.jpg" alt="Temple Fresco"><h3>Temple Fresco</h3><p>Layered textures inspired by South Indian temple walls.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art6.jpg" alt="Monsoon Sketch"><h3>Monsoon Sketch</h3><p>Ink sketch capturing rural Tamil Nadu during rain.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art7.jpg" alt="Festival Glow"><h3>Festival Glow</h3><p>Vibrant colors inspired by Pongal celebrations.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art8.jpg" alt="Street Mural"><h3>Street Mural</h3><p>Urban art blending Tamil calligraphy and graffiti.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art9.jpg" alt="Folklore Panel"><h3>Folklore Panel</h3><p>Storytelling through layered visual motifs.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art10.jpg" alt="Digital Mandala"><h3>Digital Mandala</h3><p>Geometric symmetry meets Tamil spiritual symbolism.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art11.jpg" alt="Earth Tones"><h3>Earth Tones</h3><p>Natural pigments and textures from local soils.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+          <div class="artwork-card"><img src="assets/art12.jpg" alt="Memory Threads"><h3>Memory Threads</h3><p>Mixed media collage exploring ancestral memory.</p><a href="contact.html" class="btn btn--buy">Contact to Buy</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Next button -->
+  <div class="next-button-wrapper">
+    <a href="contact.html" class="btn btn--next">Next →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html" class="is-active">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-credit">
+        <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav script -->
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav__links--open');
+    });
+  </script>
+</body>
+</html>

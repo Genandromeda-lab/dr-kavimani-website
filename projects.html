@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research studies and projects of Dr. K. Kavimani." />
+  <title>Projects | Dr. K. Kavimani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo">
+        <span>Dr. K. Kavimani</span>
+        <small class="nav__tagline">Art is the heart of transformation</small>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html" class="is-active">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Timeline -->
+    <section class="section section--light">
+      <div class="main-container">
+        <div class="timeline-container">
+          <h2 class="timeline-title">Project Timeline</h2>
+          <div class="timeline-entry">
+            <div class="timeline-year">2007</div>
+            <div class="timeline-desc">Kalamkari Paintings in South India (BFA Project)</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2009</div>
+            <div class="timeline-desc">Tanjore Maratha Painting (MFA Dissertation)</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2011</div>
+            <div class="timeline-desc">Cholas Period Paintings (M.Phil Thesis)</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-desc">Rock Paintings (Ph.D Thesis)</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-desc">Women Artists in India (Contemporary Period)</div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-desc">Ganjifa Paintings (Project Work)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--peach">
+  <div class="main-container">
+    <div class="card project-insights">
+      <h2>Project Insights & Impact</h2>
+      <p>Dr. Kavimani’s research projects span traditional and contemporary art forms, blending cultural documentation with modern pedagogy. His works consistently highlight:</p>
+      <ul class="insights-list">
+        <li><strong>Revival of Heritage:</strong> Documenting and modernizing Tamil Nadu’s traditional art forms such as Kalamkari, Tanjore Maratha paintings, and rock art.</li>
+        <li><strong>Social Dimensions:</strong> Exploring Dalit art, women artists, and marginalized voices in Indian art history.</li>
+        <li><strong>Pedagogical Innovation:</strong> Integrating traditional motifs into modern teaching methods, ensuring art education remains dynamic.</li>
+        <li><strong>Global Relevance:</strong> Presenting at international conferences and publishing widely, connecting Tamil art traditions to global discourse.</li>
+        <li><strong>Student Engagement:</strong> Using projects as live case studies in workshops and tours, inspiring the next generation of artists.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--peach">
+  <div class="main-container">
+    <div class="card project-vision">
+      <h2>Approach & Vision in Projects</h2>
+      <p>Beyond individual milestones, Dr. Kavimani’s projects reflect a broader vision of art as a living dialogue between tradition and modernity. His approach emphasizes:</p>
+      <div class="vision-grid">
+        <div class="vision-item">
+          <h3>🔍 Research Depth</h3>
+          <p>Meticulous documentation of Tamil Nadu’s art heritage, combining fieldwork with academic rigor.</p>
+        </div>
+        <div class="vision-item">
+          <h3>🤝 Collaboration</h3>
+          <p>Working with universities, cultural bodies, and students to expand the reach of his findings.</p>
+        </div>
+        <div class="vision-item">
+          <h3>🎨 Innovation</h3>
+          <p>Blending traditional motifs with modern techniques to create new pedagogical models.</p>
+        </div>
+        <div class="vision-item">
+          <h3>🌍 Global Dialogue</h3>
+          <p>Positioning Tamil art traditions within international conversations on culture and identity.</p>
+        </div>
+        <div class="vision-item">
+          <h3>🚀 Future Directions</h3>
+          <p>Exploring digital archiving, interactive exhibitions, and new forms of art pedagogy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Next button -->
+  <div class="next-button-wrapper">
+    <a href="events.html" class="btn btn--next">Next →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html" class="is-active">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-credit">
+        <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav script -->
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const links = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('nav__links--open');
+    });
+  </script>
+</body>
+</html>

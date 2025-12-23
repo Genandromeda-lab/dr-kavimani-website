@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Dr. K. Kavimani for artwork inquiries and collaborations." />
+  <title>Contact | Dr. K. Kavimani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo">
+        <span>Dr. K. Kavimani</span>
+        <small class="nav__tagline">Art is the heart of transformation</small>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  
+    <main>
+  <!-- Contact Header Container -->
+  <section class="section section--light">
+    <div class="main-container">
+      <div class="contact-header-container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-intro">
+          Interested in purchasing an artwork or collaborating? Fill out the form below and your inquiry will be sent directly to Dr. Kavimani’s WhatsApp.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Container -->
+  <section class="section section--light">
+    <div class="main-container">
+      <form id="contactForm" class="contact-form">
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Your Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Optional: Include your WhatsApp number">
+  </div>
+
+  <div class="form-group">
+    <label for="artwork">Artwork Title</label>
+    <input type="text" id="artwork" name="artwork" placeholder="Which artwork are you interested in?">
+  </div>
+
+  <div class="form-group">
+    <label for="budget">Estimated Budget</label>
+    <input type="text" id="budget" name="budget" placeholder="Optional: Your budget range">
+  </div>
+
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn--submit">Send via WhatsApp</button>
+</form>
+    </div>
+  </section>
+
+  <div class="contact-info-container">
+  <h3 class="contact-info-title">Dr. K. Kavimani’s Contact Details</h3>
+  <ul class="contact-info-list">
+    <li><strong>Email:</strong> kavimani.art@gmail.com</li>
+    <li><strong>Phone:</strong> +91 89734 31172</li>
+    <li><strong>Location:</strong> Chennai, Tamil Nadu, India</li>
+  </ul>
+</div>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="projects.html">Projects</a>
+        <a href="events.html">Events</a>
+        <a href="outreach.html">Outreach</a>
+        <a href="art.html">Artworks</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </div>
+      <div class="footer-credit">
+        <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  const toggle = document.querySelector('.nav__toggle');
+  const links = document.querySelector('.nav__links');
+
+  toggle.addEventListener('click', () => {
+    // Toggle a CSS class instead of inline styles
+    links.classList.toggle('nav__links--open');
+  });
+</script>
+
+  <!-- WhatsApp Integration Script -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const artwork = document.getElementById("artwork").value;
+      const message = document.getElementById("message").value;
+
+      // Dr. Kavimani's WhatsApp number
+      const phoneNumber = "918973431172"; // +91 country code included
+
+      const whatsappMessage = `Hello Dr. Kavimani,%0A
+Name: ${name}%0A
+Email: ${email}%0A
+Artwork: ${artwork}%0A
+Message: ${message}`;
+
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+      window.open(whatsappURL, "_blank");
+
+      // Confirmation notification
+      alert("Your inquiry is ready in WhatsApp. Please press Send to complete.");
+    });
+  </script>
+</body>
+</html>
