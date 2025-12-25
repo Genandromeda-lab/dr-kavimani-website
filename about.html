@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="About Dr. K. Kavimani, Professor of Printmaking, researcher, author, and cultural ambassador.">
-  <title>About | Dr. K. Kavimani</title>
+  <title>About |Artist Dr. K. Kavimani</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="images/kavimani sir solo photo.jpeg">
 </head>
 <body>
   <!-- Navigation -->
   <header class="nav">
     <div class="container nav__inner">
       <a class="nav__logo">
-        <span>Dr. K. Kavimani</span>
+        <span> Artist Dr. K. Kavimani</span>
         <small class="nav__tagline">Art is the heart of transformation</small>
       </a>
       <nav class="nav__links">
@@ -38,7 +38,7 @@
       <div class="main-container">
         <div class="card">
           <h2>Academic Journey</h2>
-          <p>Dr. K. Kavimani has dedicated his career to Printmaking and Fine Arts, serving as a professor at the Government College of Fine Arts, Chennai. With over 15 years of teaching experience, he has nurtured countless artists, encouraging them to explore creativity as a transformative force.</p>
+          <p>Dr. K. Kavimani has dedicated his career to Painting and Fine Arts, serving as a professor at the Government College of Fine Arts, Chennai. With over 15 years of teaching experience, he has nurtured countless artists, encouraging them to explore creativity as a transformative force.</p>
         </div>
       </div>
     </section>
@@ -54,23 +54,42 @@
       </div>
     </section>
 
-   <section class="section section--peach">
-  <div class="main-container">
-    <div class="card">
-      <h2>Gallery Highlights</h2>
+      <section class="section section--peach">
+  <div class="carousel-container">
+    <div class="carousel-card">
+      <!-- Header -->
+      <div class="gallery-header-container">
+        <h2 class="gallery-title">Gallery Highlights</h2>
+        <p class="gallery-intro">Moments and certificates from outreach, mentoring, and events.</p>
+      </div>
+
+      <!-- Carousel -->
       <div class="carousel">
-        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn prev" aria-label="Previous">‹</button>
         <div class="carousel-track-container">
           <ul class="carousel-track">
-            <li class="carousel-slide"><img src="images/KM speech 3.jpeg" alt="Workshop moment"></li>
-            <li class="carousel-slide"><img src="images/KM sangamam.jpeg" alt="Conference presentation"></li>
-            <li class="carousel-slide"><img src="images/KM with students archi.jpeg" alt="Student mentoring"></li>
-            <li class="carousel-slide"><img src="images/KM kilambakkam.jpeg" alt="Festival coordination"></li>
-            <li class="carousel-slide"><img src="images/KM fort.jpeg" alt="Art tour site"></li>
+            <li class="carousel-slide">
+              <img src="images/KM speech 3.jpeg" alt="Workshop moment">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/KM sangamam.jpeg" alt="Conference presentation">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/KM with students archi.jpeg" alt="Student mentoring">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/KM kilambakkam.jpeg" alt="Festival coordination">
+            </li>
+            <li class="carousel-slide">
+              <img src="images/KM group photo.jpeg" alt="Art tour site">
+            </li>
           </ul>
         </div>
-        <button class="carousel-btn next">›</button>
+        <button class="carousel-btn next" aria-label="Next">›</button>
       </div>
+
+      <!-- Dots navigation -->
+      <div class="carousel-dots" aria-label="Slide navigation"></div>
     </div>
   </div>
 </section>
@@ -81,6 +100,16 @@
           <h2>Outreach & Legacy</h2>
           <p>Beyond academia, Dr. Kavimani has coordinated cultural festivals such as Chennai Sangamam and Art Market, bringing art into public spaces and communities. His legacy lies in bridging tradition and modernity, ensuring Tamil art and Dalit voices are celebrated globally.</p>
           <a href="outreach.html" class="btn btn--secondary">Discover Outreach</a>
+        </div>
+      </div>
+    </section>
+    <!-- Card 4 -->
+    <section class="section section--peach">
+      <div class="main-container">
+        <div class="about-card">
+          <h3>Dr. K. Kavimani – Artist CV</h3>
+          <p>Explore Dr. Kavimani’s journey, exhibitions, and contributions to the arts.</p>
+          <a href="kavimani cv 2025.pdf" download class="cv-button">Open CV</a>
         </div>
       </div>
     </section>
@@ -105,7 +134,7 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="footer-credit">
-        <p>Designed by Genandromeda<br>&copy; 2025 Dr. K. Kavimani. All rights reserved.</p>
+        <p>Designed by Genandromeda<br>&copy; 2025 Artist Dr. K. Kavimani. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -118,33 +147,59 @@
     });
   </script>
 
-  <script>
+    <script>
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(track.children);
-  const nextButton = document.querySelector('.next');
-  const prevButton = document.querySelector('.prev');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+  const dotsContainer = document.querySelector('.carousel-dots');
 
-  let currentIndex = 0;
+  let index = 0;
+  let autoTimer;
 
-  function updateCarousel() {
-    const slideWidth = slides[0].getBoundingClientRect().width + 16;
-    track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    if (i === 0) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
+  });
+  const dots = Array.from(dotsContainer.children);
+
+  function update() {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === index));
   }
 
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
+  function next() { index = (index + 1) % slides.length; update(); }
+  function prev() { index = (index - 1 + slides.length) % slides.length; update(); }
+
+  nextBtn.addEventListener('click', () => { next(); resetAuto(); });
+  prevBtn.addEventListener('click', () => { prev(); resetAuto(); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { index = i; update(); resetAuto(); }));
+
+  // Auto-slide
+  function startAuto() { autoTimer = setInterval(next, 4000); }
+  function resetAuto() { clearInterval(autoTimer); startAuto(); }
+  startAuto();
+
+  // Maintain alignment on resize
+  window.addEventListener('resize', update);
+
+  // Basic touch swipe
+  let startX = 0;
+  track.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive: true});
+  track.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (endX - startX > 40) prev();
+    if (startX - endX > 40) next();
+    resetAuto();
   });
 
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
-
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-  }, 5000);
+  // Initial position
+  update();
 </script>
+
 </body>
 </html>
