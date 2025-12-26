@@ -96,4 +96,4 @@ open index.html
 
 ### December 2025
 - Updated `.gitignore` to allow PDF files so certification documents and archives can be tracked in Git.
-- Added `newspaper-dr-kavimani.pdf` to the repository for public access via GitHub Pages.
+- Added `Newspaper.pdf` to the repository for public access via GitHub Pages.
