@@ -60,3 +60,34 @@ open index.html
 - 🚀 **Deployment**
   - Synced all changes to GitHub Pages
   - Verified updates across desktop and mobile devices
+
+
+
+## 🔧 Layout & Design
+- Updated **header and footer** across:
+  - teaching.html
+  - publications.html
+  - projects.html
+  - outreach.html
+  - index.html
+  - events.html
+  - contact.html
+  - about.html
+  - art.html
+- Modified **styles.css** for consistent design and responsiveness.
+- Tweaked **button colors in art.html** for improved visual appeal.
+
+## 📄 New Content
+- Added **certifications.html** page showcasing Dr. K. Kavimani’s achievements.
+- Uploaded **News Paper Dr K.Kavimani.pdf** (archival recognition).
+- Added **new images** to enhance visual storytelling.
+
+## 🏅 Certifications Section
+- Integrated authentic certifications and achievements from uploaded certificates.
+- Structured the section for clarity and impact.
+
+---
+
+### Next Steps
+- Verify all links and images render correctly on GitHub Pages (if deployed).
+- Consider grouping certifications by category (Artistic, Academic, International, Awards) for readability.
