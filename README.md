@@ -32,3 +32,26 @@ open index.html
 - Improved mobile responsiveness:
   - Artwork grid now collapses into a single column on screens ≤ 768px
   - Images scale to full width with auto height for better viewing
+
+  ## ✨ Latest Updates
+
+- 🎨 **Artworks Gallery**
+  - Added new artwork cards with immersive descriptions and price tags
+  - Integrated WhatsApp appreciation button
+  - Improved mobile responsiveness with media queries (single column layout, full-width images)
+
+- 🎭 **Styles & Layout**
+  - Updated `styles.css` for responsive scaling
+  - Fixed image clipping on mobile by switching to `object-fit: contain`
+  - Enhanced highlight section styling for consistency
+
+- 📚 **Publications**
+  - Updated `publications.html` with latest academic works and layout improvements
+
+- 🖼️ **Images**
+  - Added new artwork images to `/images` folder
+  - Included screenshots for desktop and mobile views in README
+
+- 🚀 **Deployment**
+  - Synced all changes to GitHub Pages
+  - Verified updates across desktop and mobile devices
