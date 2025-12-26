@@ -977,7 +977,7 @@ main .section--peach {
 
 .artwork-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -1017,7 +1017,7 @@ main .section--peach {
 /* ===== Responsive Tweaks ===== */
 @media (max-width: 768px) {
   .artwork-card img {
-    height: 180px;
+    height: auto;
   }
 }
 
@@ -1546,4 +1546,73 @@ main .section--peach {
 .btn--library:hover {
   background-color: #00664d;
   transform: translateY(-2px);
+}
+
+
+.artwork-card .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b22222; /* deep red accent */
+  margin: 8px 0;
+  text-align: center;
+}
+
+.artwork-card {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.artwork-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.artist-info-container {
+  max-width: 800px;
+  margin: 40px auto 60px auto;
+  padding: 28px 40px;
+  background: linear-gradient(135deg, #1e90ff 0%, #00bfff 50%, #ffd580 100%);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.artist-info-container h2,
+.artist-info-container h3 {
+  margin-bottom: 12px;
+}
+
+.artist-info-container p {
+  margin: 8px 0 16px;
+}
+
+.artist-info-container .btn--explore,
+.artist-info-container .btn--wish {
+  display: inline-block;
+  margin: 10px 8px 0 0;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.artist-info-container .btn--explore {
+  background-color: #2e8b57; /* green accent */
+}
+
+.artist-info-container .btn--wish {
+  background-color: #b22222; /* red accent */
+}
+
+.artist-info-container .btn--explore:hover,
+.artist-info-container .btn--wish:hover {
+  background-color: #444;
 }
