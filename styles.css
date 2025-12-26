@@ -1020,7 +1020,15 @@ main .section--peach {
     height: auto;
   }
 }
-
+@media (max-width: 768px) {
+  .artwork-card img {
+    width: 100%;
+    height: auto;
+  }
+  .artworks-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+}
 @media (max-width: 480px) {
   .gallery-title {
     font-size: 1.6rem;
