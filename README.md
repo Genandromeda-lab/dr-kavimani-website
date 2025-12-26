@@ -97,3 +97,25 @@ open index.html
 ### December 2025
 - Updated `.gitignore` to allow PDF files so certification documents and archives can be tracked in Git.
 - Added `Newspaper.pdf` to the repository for public access via GitHub Pages.
+
+# 🎨 Artist Website – Updates Log
+
+## 📌 Overview
+This repository showcases the works, lectures, and achievements of **Dr. K. Kavimani**.  
+Recent updates unify the design system across multiple pages, improve carousel consistency, and introduce gradient-styled heading cards.
+
+---
+
+## ✅ Modified Files and Changes
+
+### `outreach.html`, 
+- Added a **separate heading card section** above the carousel:
+  ```html
+  <section class="section section--peach">
+    <div class="main-container">
+      <div class="card">
+        <h2>Outreach Gallery</h2>
+        <p>Snapshots from outreach programs, student mentoring, and cultural events.</p>
+      </div>
+    </div>
+  </section>
