@@ -1018,6 +1018,7 @@ main .section--peach {
 @media (max-width: 768px) {
   .artwork-card img {
     height: auto;
+    object-fit: contain;
   }
 }
 @media (max-width: 768px) {
