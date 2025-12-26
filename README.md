@@ -47,6 +47,11 @@ open index.html
 
 - 📚 **Publications**
   - Updated `publications.html` with latest academic works and layout improvements
+  - Updated `publications.html` with Tamil headings for better cultural representation
+  - Improved layout and readability for bilingual audiences
+
+
+
 
 - 🖼️ **Images**
   - Added new artwork images to `/images` folder
