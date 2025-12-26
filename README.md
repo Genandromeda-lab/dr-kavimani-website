@@ -23,3 +23,12 @@ Visit: [https://genandromeda-lab.github.io](https://genandromeda-lab.github.io)
 git clone https://github.com/Genandromeda-lab/dr-kavimani-website.git
 cd dr-kavimani-website
 open index.html
+
+## ✨ Latest Updates
+- Added new artwork cards with immersive descriptions and price tags
+- Introduced a highlight section for exploring more collections
+- Integrated WhatsApp appreciation button
+- Updated `art.html`, `styles.css`, and added new images
+- Improved mobile responsiveness:
+  - Artwork grid now collapses into a single column on screens ≤ 768px
+  - Images scale to full width with auto height for better viewing
