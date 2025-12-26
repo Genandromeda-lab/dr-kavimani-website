@@ -133,6 +133,7 @@ main .section {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 main .section--light,
@@ -228,7 +229,7 @@ main .section--peach {
   padding-left: 20px;
   position: relative;
   text-align: justify;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .card ul li::before {
@@ -1447,7 +1448,8 @@ main .section--peach {
 
 /* Responsive */
 @media (max-width: 600px) {
-  .carousel { height: 220px; }
+  .carousel { height: 300px;
+  max-width: 500px; }
   .gallery-title { font-size: 1.6rem; }
   .gallery-intro { font-size: 0.95rem; }
   .carousel-slide img {
@@ -1614,14 +1616,69 @@ main .section--peach {
 }
 
 .artist-info-container .btn--explore {
-  background-color: #2e8b57; /* green accent */
+  background-color: #0055aa; /* blue accent */
 }
 
 .artist-info-container .btn--wish {
-  background-color: #b22222; /* red accent */
+  background-color:#2e8b57; /* green accent */
 }
 
 .artist-info-container .btn--explore:hover,
 .artist-info-container .btn--wish:hover {
   background-color: #444;
+}
+
+
+.carousel-slide figure {
+  margin: 0;
+  text-align: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-slide figcaption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.carousel-slide figure {
+  margin: 0;
+  text-align: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-slide figcaption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+
+.carousel-slide {
+  text-align: center;
+}
+
+.slide-caption {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 8px; /* space between caption and image */
+  font-weight: 600;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
