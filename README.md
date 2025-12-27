@@ -119,3 +119,20 @@ Recent updates unify the design system across multiple pages, improve carousel c
       </div>
     </div>
   </section>
+
+# 🎨 Artist Website – Updates Log
+
+## 📌 Overview
+This repository showcases the works, lectures, and achievements of **Dr. K. Kavimani**.  
+Recent updates unify the design system across multiple pages, improve carousel consistency, and introduce gradient-styled heading cards.
+
+---
+
+## ✅ Modified Files and Changes
+
+### `art.html`
+- Corrected spelling errors in  captions, and descriptions.
+- Improved clarity in alt text for accessibility and SEO.
+- Example correction:
+  ```html
+  <p> Dust with Rainbow </p>
