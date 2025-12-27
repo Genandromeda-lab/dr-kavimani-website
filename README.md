@@ -136,3 +136,5 @@ Recent updates unify the design system across multiple pages, improve carousel c
 - Example correction:
   ```html
   <p> Dust with Rainbow </p>
+
+# Artist Dr. K. Kavimani | Official Website This repository contains the official website for **Dr. K. Kavimani**, Professor, Artist, and Researcher. The site showcases his publications, teaching, projects, events, outreach, certifications, and artworks. --- ## 📂 Recent Updates - **`contact.html`** - Added embedded video support. - Inserted **3D PORTFOLIO.mp4** to enhance the Contact page with a visual introduction. - **`Artist Dr.K.Kavimani Portfolio.pdf`** - Uploaded the latest portfolio document for download/viewing. - **`3D PORTFOLIO.mp4`** - Included in the project folder for video embedding. ---
